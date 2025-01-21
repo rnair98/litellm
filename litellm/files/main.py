@@ -111,7 +111,7 @@ def file_retrieve(
             api_base = (
                 optional_params.api_base
                 or litellm.api_base
-                or os.getenv("OPENAI_API_BASE")
+                or os.getenv("OPENAI_BASE_URL")
                 or "https://api.openai.com/v1"
             )
             organization = (
@@ -262,7 +262,7 @@ def file_delete(
             api_base = (
                 optional_params.api_base
                 or litellm.api_base
-                or os.getenv("OPENAI_API_BASE")
+                or os.getenv("OPENAI_BASE_URL")
                 or "https://api.openai.com/v1"
             )
             organization = (
@@ -413,7 +413,7 @@ def file_list(
             api_base = (
                 optional_params.api_base
                 or litellm.api_base
-                or os.getenv("OPENAI_API_BASE")
+                or os.getenv("OPENAI_BASE_URL")
                 or "https://api.openai.com/v1"
             )
             organization = (
@@ -574,7 +574,7 @@ def create_file(
             api_base = (
                 optional_params.api_base
                 or litellm.api_base
-                or os.getenv("OPENAI_API_BASE")
+                or os.getenv("OPENAI_BASE_URL")
                 or "https://api.openai.com/v1"
             )
             organization = (
@@ -757,7 +757,7 @@ def file_content(
             api_base = (
                 optional_params.api_base
                 or litellm.api_base
-                or os.getenv("OPENAI_API_BASE")
+                or os.getenv("OPENAI_BASE_URL")
                 or "https://api.openai.com/v1"
             )
             organization = (
