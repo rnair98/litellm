@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  codecov: codecov/codecov@4.0.1
+  codecov: codecov/codecov@5.0.3
 
 jobs:
   local_testing:
@@ -1704,7 +1704,7 @@ jobs:
             coverage combine llm_translation_coverage logging_coverage litellm_router_coverage local_testing_coverage litellm_assistants_api_coverage auth_ui_unit_tests_coverage langfuse_coverage caching_coverage litellm_proxy_unit_tests_coverage image_gen_coverage pass_through_unit_tests_coverage batches_coverage
             coverage xml
       - codecov/upload:
-          file: ./coverage.xml
+          files: ./coverage.xml
 
   publish_to_pypi:
     docker:

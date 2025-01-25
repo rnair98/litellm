@@ -143,7 +143,7 @@ def create_fine_tuning_job(
             api_base = (
                 optional_params.api_base
                 or litellm.api_base
-                or os.getenv("OPENAI_API_BASE")
+                or os.getenv("OPENAI_BASE_URL")
                 or "https://api.openai.com/v1"
             )
             organization = (
@@ -362,7 +362,7 @@ def cancel_fine_tuning_job(
             api_base = (
                 optional_params.api_base
                 or litellm.api_base
-                or os.getenv("OPENAI_API_BASE")
+                or os.getenv("OPENAI_BASE_URL")
                 or "https://api.openai.com/v1"
             )
             organization = (
@@ -523,7 +523,7 @@ def list_fine_tuning_jobs(
             api_base = (
                 optional_params.api_base
                 or litellm.api_base
-                or os.getenv("OPENAI_API_BASE")
+                or os.getenv("OPENAI_BASE_URL")
                 or "https://api.openai.com/v1"
             )
             organization = (
@@ -676,7 +676,7 @@ def retrieve_fine_tuning_job(
             api_base = (
                 optional_params.api_base
                 or litellm.api_base
-                or os.getenv("OPENAI_API_BASE")
+                or os.getenv("OPENAI_BASE_URL")
                 or "https://api.openai.com/v1"
             )
             organization = (

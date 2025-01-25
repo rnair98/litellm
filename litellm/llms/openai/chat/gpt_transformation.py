@@ -286,6 +286,6 @@ class OpenAIGPTConfig(BaseLLMModelInfo, BaseConfig):
         return (
             api_base
             or litellm.api_base
-            or get_secret_str("OPENAI_API_BASE")
+            or get_secret_str("OPENAI_BASE_URL")
             or "https://api.openai.com/v1"
         )
